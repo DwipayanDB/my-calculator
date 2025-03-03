@@ -1,0 +1,48 @@
+/* src/components/Button/Button.css */
+.calculator-key {
+    height: 65px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    font-size: 1.5rem;
+    transition: background-color 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+  }
+  
+  .calculator-key:hover {
+    opacity: 0.8;
+  }
+  
+  .key-clear {
+    background-color: #ff6347;
+  }
+  
+  .key-percent {
+    background-color: #a9a9a9;
+  }
+  
+  .calculator-key:not(.key-clear):not(.key-percent):not(.operator) {
+    background-color: #666;
+  }
+  
+  .operator {
+    background-color: #f5923e;
+  }
+  
+  @media (max-width: 480px) {
+    .calculator-key {
+      height: 55px;
+      font-size: 1.25rem;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .calculator-key {
+      height: 50px;
+      font-size: 1.1rem;
+    }
+  }

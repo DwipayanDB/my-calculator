@@ -1,0 +1,17 @@
+/* src/components/Calculator/Calculator.css */
+.calculator {
+    width: 90%;
+    max-width: 320px;
+    margin: 0 auto;
+    background-color: #333;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+  
+  @media (min-width: 481px) {
+    .calculator {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }

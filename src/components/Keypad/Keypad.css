@@ -1,0 +1,41 @@
+/* src/components/Keypad/Keypad.css */
+.calculator-keypad {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .input-keys {
+    width: 100%;
+  }
+  
+  .function-keys {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .digit-keys {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .operator-keys {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  @media (min-width: 481px) {
+    .calculator-keypad {
+      flex-direction: row;
+    }
+    
+    .input-keys {
+      width: 75%;
+    }
+    
+    .operator-keys {
+      width: 25%;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+    }
+  }
